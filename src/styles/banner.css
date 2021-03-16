@@ -8,8 +8,10 @@
 
 #banner-img {
 	width: 100%;
-	mix-blend-mode: darken;
+	height: 100%;
+	object-fit: cover;
 	border-radius: 10px;
+	filter: brightness(70%);
 }
 
 #tagline {
@@ -19,4 +21,20 @@
 	color: white;
 	font-size: 24px;
 	font-weight: 500;
+}
+
+/* For desktop */
+@media all and (min-width: 1200px) {
+  #banner {
+  	margin-top: 4rem;
+  	width: 1240px;
+  	height: 223px;
+  }
+
+  #tagline {
+  	width: 705px;
+  	font-size: 48px;
+  	left: 50%;
+  	transform: translate(-50%, -80%);
+  }
 }

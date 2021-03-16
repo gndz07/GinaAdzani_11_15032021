@@ -15,8 +15,8 @@ export default class Homepage extends React.Component{
 				<div id="banner">
 					<Banner imgSrc={HeaderImg} />
 					<h1 id="tagline">Chez vous, partout et ailleurs</h1>
-					<AccommodationCards />
 				</div>
+				<AccommodationCards />
 			</div>
 		)
 		

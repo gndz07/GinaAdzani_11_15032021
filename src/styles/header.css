@@ -64,5 +64,50 @@ body {
 .nav-menu {
 	font-size: 12px;
 	color: #FF6060;
+}
+
+/*For desktop*/
+@media all and (min-width: 1200px) {
+	#header {
+		width: 1240px;
+  		height: 68px;
+  		margin: auto;
+		margin-top: 4rem;
+		padding: 0;
+  	}
+
+	#letter-k {
+		width: 54.33px;
+		height: 62.26px;
+	}
+
+	#letter-a-home {
+		width: 46.04px;
+		height: 53.36px;
+	}
+
+	#letter-s {
+		width: 39.41px;
+		height: 48px;
+	}
+
+	#letter-a {
+		width: 40.89px;
+		height: 48.17px;
+	}
+
+	#kasa-logo {
+		width: 210.32px;
+		height: 68px;
+	}
+
+	#navbar {
+		width: 309px;
+		height: 34px;
+	}
+
+	.nav-menu {
+		font-size: 24px;
+	}
 
 }
