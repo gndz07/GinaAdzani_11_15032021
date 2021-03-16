@@ -17,7 +17,8 @@
 #tagline {
 	position: absolute;
 	top: 50%;
-	transform: translateY(-50%);
+	left: 0.5rem;
+	transform: translateY(-65%);
 	color: white;
 	font-size: 24px;
 	font-weight: 500;
