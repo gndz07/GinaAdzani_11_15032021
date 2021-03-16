@@ -1,0 +1,22 @@
+#banner {
+	width: 335px;
+	height: 111px;
+	margin: auto;
+	margin-top: 16px;
+	position: relative;
+}
+
+#banner-img {
+	width: 100%;
+	mix-blend-mode: darken;
+	border-radius: 10px;
+}
+
+#tagline {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	color: white;
+	font-size: 24px;
+	font-weight: 500;
+}
