@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from "react-router-dom";
 import Logo from './Logo.js'
 
 
@@ -8,8 +9,8 @@ export default class Header extends React.Component{
 			<div id="header">
 				<Logo />
 				<nav id="navbar">
-					<a href="#" className="nav-menu">ACCUEIL</a>
-					<a href="#" className="nav-menu">A PROPOS</a>
+					<NavLink to='/' className="nav-menu" exact={true}>ACCUEIL</NavLink>
+					<NavLink to='/about' className="nav-menu">A PROPOS</NavLink>
 				</nav>
 			</div>
 		)

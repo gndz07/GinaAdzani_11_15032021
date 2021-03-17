@@ -7,7 +7,6 @@ body {
 }
 
 #header {
-	height: 47px;
 	padding: 20px 20px 0;
 	display: flex;
 	justify-content: space-between;
@@ -64,6 +63,11 @@ body {
 .nav-menu {
 	font-size: 12px;
 	color: #FF6060;
+}
+
+.nav-menu.active {
+	color: #FF6060;
+	text-decoration: underline;
 }
 
 /*For desktop*/
