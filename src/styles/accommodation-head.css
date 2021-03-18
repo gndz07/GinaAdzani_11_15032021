@@ -1,4 +1,4 @@
-#page-body {
+#accommodation-page {
 	width: 335px;
 	margin: auto;
 	margin-top: 2rem;
@@ -55,7 +55,7 @@
 }
 
 @media all and (min-width: 1200px) {
-	#page-body {
+	#accommodation-page {
 		width: 1240px;
 	}
 
