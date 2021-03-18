@@ -1,0 +1,56 @@
+#footer {
+	height: 209px;
+	background-color: black;
+	position: relative;
+	margin-top: 4rem;
+}
+
+#footer-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#footer img {
+	filter: contrast(0%) brightness(100);
+}
+
+#footer #letter-k {
+	width: 31.51px;
+	height: 36.11px;
+}
+
+#footer #letter-a-home {
+	width: 26.71px;
+	height: 30.95px;
+}
+
+#footer #letter-s {
+	width: 22.86px;
+	height: 27.84px;
+}
+
+#footer #letter-a {
+	width: 23.72px;
+	height: 27.94px;
+}
+
+#footer #kasa-logo {
+	width: 122px;
+	height: 39.44px;
+	margin-bottom: 2rem;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+
+.footer-text {
+	font-size: 12px;
+	color: white;
+}
+
+@media all and (min-width: 1200px) {
+	.footer-text {
+		font-size: 24px;
+	}
+}

@@ -15,6 +15,5 @@ export default class About extends React.Component{
 				<AboutCollapse />
 			</div>
 		)
-		
 	}
 }
