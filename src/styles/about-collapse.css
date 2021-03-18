@@ -1,0 +1,14 @@
+#accordion  {
+	width: 335px;
+	margin: auto;
+	margin-top: 2rem;
+}
+
+[data-toggle="collapse"] .fa:before {  
+  content: "\f078";
+}
+
+[data-toggle="collapse"].collapsed .fa:before {
+  content: "\f077";
+}
+
