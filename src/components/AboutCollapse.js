@@ -8,7 +8,7 @@ export default class AboutCollaps extends React.Component{
 			    <div className="card">
 			    	<div className="card-header" id="headingOne">
 			        	<h5 className="mb-0">
-			        		<button className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+			        		<button className="btn btn-link collapsed accordion-btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
 			            		Fiabilité
 			            		<i className="fa" aria-hidden="true"></i>
 			        		</button>
@@ -24,7 +24,7 @@ export default class AboutCollaps extends React.Component{
 			    <div className="card">
 			    	<div className="card-header" id="headingTwo">
 			        	<h5 className="mb-0">
-			        		<button className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			        		<button className="btn btn-link collapsed accordion-btn" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 			            		Respect
 			            		<i className="fa" aria-hidden="true"></i>
 			        		</button>
@@ -40,7 +40,7 @@ export default class AboutCollaps extends React.Component{
 			    <div className="card">
 			    	<div className="card-header" id="headingThree">
 			        	<h5 className="mb-0">
-			        		<button className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+			        		<button className="btn btn-link collapsed accordion-btn" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 			            		Service
 			            		<i className="fa" aria-hidden="true"></i>
 			        		</button>
@@ -56,7 +56,7 @@ export default class AboutCollaps extends React.Component{
 			    <div className="card">
 			    	<div className="card-header" id="headingFour">
 			        	<h5 className="mb-0">
-			        		<button className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+			        		<button className="btn btn-link collapsed accordion-btn" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
 			            		Sécurité
 			            		<i className="fa" aria-hidden="true"></i>
 			        		</button>
