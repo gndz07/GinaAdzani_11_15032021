@@ -1,0 +1,49 @@
+#error-page {
+	color: #FF6060;
+	width: 260px;
+	text-align: center;
+	margin: auto;
+}
+
+#error-page-center {
+	margin-top: 50%;
+	transform: translateY(-50%);
+}
+
+#error-404 {
+	font-size: 96px;
+	font-weight: 700;
+}
+
+#error-msg {
+	font-size: 18px;
+}
+
+#error-nav {
+	color: #FF6060;
+	font-size: 14px;
+	text-decoration: underline;
+}
+
+@media all and (min-width: 1200px) {
+	#error-page {
+		width: 1024px;
+	}
+
+	#error-page-center {
+		margin-top: 20%;
+		transform: translateY(-30%);
+	}
+
+	#error-404 {
+		font-size: 288px;
+	}
+
+	#error-msg {
+		font-size: 36px;
+	}
+
+	#error-nav {
+		font-size: 18px;
+	}
+}
