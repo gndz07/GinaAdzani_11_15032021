@@ -15,12 +15,17 @@
 	padding: 0;
 }
 
+.card-header:first-child {
+	border-radius: 5px;
+}
+
 .accordion-btn {
 	width: 100%;
 	color: white;
 	display: flex;
 	justify-content: space-between;
 	font-size: 13px;
+	align-items: center;
 }
 
 .btn-link.focus, .btn-link:focus {
@@ -44,5 +49,25 @@
 	background-color: #F7F7F7;
 	color: #FF6060;
 	font-size: 12px;
+}
+
+@media all and (min-width: 1200px) {
+	#accordion {
+		width: 1023px;
+	}
+
+	.card-header {
+		height: 47px;
+	}
+
+	.accordion-btn {
+		font-size: 24px;
+		font-weight: 500;
+	}
+
+	.card-body {
+		font-size: 24px;
+		font-weight: 400;
+	}
 }
 
