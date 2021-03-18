@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class AboutCollaps extends React.Component{
+export default class AboutCollapse extends React.Component{
 	render() {
 		return (
 			<div className="container">
