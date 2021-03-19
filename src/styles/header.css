@@ -34,6 +34,14 @@ body {
 	left: 30%;
 }
 
+#small-square {
+	width: 3.68px;
+	height: 10.89px;
+	position: absolute;
+	bottom: 8.17%;
+	left: 45%;
+}
+
 #letter-s {
 	width: 27.17px;
 	height: 33.18px;
@@ -94,6 +102,11 @@ body {
 	#letter-a-home {
 		width: 46.04px;
 		height: 53.36px;
+	}
+
+	#small-square {
+		width: 5.34px;
+		height: 15.75px;
 	}
 
 	#letter-s {
