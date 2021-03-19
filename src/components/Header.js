@@ -9,8 +9,8 @@ export default class Header extends React.Component{
 			<div id="header">
 				<Logo />
 				<nav id="navbar">
-					<NavLink to='/' className="nav-menu" exact={true}>ACCUEIL</NavLink>
-					<NavLink to='/about' className="nav-menu">A PROPOS</NavLink>
+					<NavLink to='/' className="nav-menu" exact={true}>Accueil</NavLink>
+					<NavLink to='/about' className="nav-menu">A Propos</NavLink>
 				</nav>
 			</div>
 		)
