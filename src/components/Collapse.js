@@ -3,8 +3,15 @@ import React from 'react';
 export default class Collapse extends React.Component {
 
 	handleClick = (e) => {
+		e.stopPropagation()
 		e.target.classList.toggle("collapsed");
 		e.target.parentElement.nextSibling.classList.toggle("show")
+	}
+
+	handleClickArrow = (e) => {
+		e.stopPropagation()
+		e.target.parentElement.classList.toggle("collapsed");
+		e.target.parentElement.parentElement.nextSibling.classList.toggle("show")
 	}
 
 	render() {
@@ -19,7 +26,7 @@ export default class Collapse extends React.Component {
 			        			
 			        				<button className="btn btn-link collapsed accordion-btn" onClick={this.handleClick} aria-controls={`#collapse${index}`}>
 			            				{collapse.title}
-			            				<i className="fa"></i>
+			            				<i className="fa" onClick={this.handleClickArrow} />
 			        				</button>
 			        			
 			    			</div>
