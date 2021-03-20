@@ -6,7 +6,6 @@ export default class AccommodationCards extends React.Component {
 	render() {
 		return (
 			<div id="cards-parent">
-			{console.log(accommodation)}
 				{accommodation.map(hotel => (
 					<NavLink to={`/accommodation/${hotel.id}`} key={hotel.id}>
 						<div className="hotel-card" key={hotel.id}>

@@ -37,11 +37,11 @@
 	text-decoration: none;
 }
 
-[data-toggle="collapse"] .fa:before {  
+.btn-link .fa:before {  
   content: "\f078";
 }
 
-[data-toggle="collapse"].collapsed .fa:before {
+.btn-link.collapsed .fa:before {
   content: "\f077";
 }
 
@@ -49,6 +49,11 @@
 	background-color: #F7F7F7;
 	color: #FF6060;
 	font-size: 12px;
+	list-style-type: none;
+}
+
+#accommodation-page .container {
+	padding: 0;
 }
 
 @media all and (min-width: 1200px) {
@@ -68,6 +73,33 @@
 	.card-body {
 		font-size: 24px;
 		font-weight: 400;
+	}
+
+/* description on individual page */
+	#accommodation-page .container {
+		max-width: 1240px;
+		width: 100%;
+		margin: 0;
+	}
+
+	#accommodation-page #accordion {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#accommodation-page .card {
+		width: 582px;
+		border-radius: 10px;
+	}
+
+	#accommodation-page .accordion-btn {
+		font-size: 18px;
+		height: 52px;
+	}
+
+	#accommodation-page .card-body {
+		font-size: 18px;
 	}
 }
 

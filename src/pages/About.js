@@ -1,9 +1,10 @@
 import React from 'react';
 import Banner from '../components/Banner.js'
-import AboutCollapse from '../components/AboutCollapse.js'
+import Collapse from '../components/Collapse.js'
 import HeaderImgAbout from '../assets/banner-about.jpg'
+import {about} from '../mocks/about.js'
 import '../styles/banner.css'
-import '../styles/about-collapse.css'
+import '../styles/collapse.css'
 
 export default class About extends React.Component{
 	render() {
@@ -12,7 +13,7 @@ export default class About extends React.Component{
 				<div id="banner">
 					<Banner bannerId="banner-img-about" imgSrc={HeaderImgAbout} />
 				</div>
-				<AboutCollapse />
+				<Collapse data={about} />
 			</div>
 		)
 	}
