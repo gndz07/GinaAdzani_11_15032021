@@ -2,20 +2,12 @@ import React from 'react';
 
 export default class Collapse extends React.Component {
 
-	handleClick = (e) => {
-		e.stopPropagation()
-		e.target.classList.toggle("collapsed");
-		e.target.parentElement.nextSibling.classList.toggle("show")
-	}
-
-	handleClickArrow = (e) => {
-		e.stopPropagation()
-		e.target.parentElement.classList.toggle("collapsed");
-		e.target.parentElement.parentElement.nextSibling.classList.toggle("show")
+	handleClick = (id) => {
+		document.getElementById(id).classList.toggle("collapsed");
+		document.getElementById(id).parentElement.nextSibling.classList.toggle("show")
 	}
 
 	render() {
-
 		return (
 			<div className="container">
 				<div id="accordion">
@@ -24,9 +16,9 @@ export default class Collapse extends React.Component {
 						<div className="card" key={`collapse${index}`}>
 			    			<div className="card-header" id={`heading${index}`}>
 			        			
-			        				<button className="btn btn-link collapsed accordion-btn" onClick={this.handleClick} aria-controls={`#collapse${index}`}>
+			        				<button id={`button${index}`} className="btn btn-link collapsed accordion-btn" onClick={() => this.handleClick(`button${index}`)} aria-controls={`#collapse${index}`}>
 			            				{collapse.title}
-			            				<i className="fa" onClick={this.handleClickArrow} />
+			            				<i className="fa" />
 			        				</button>
 			        			
 			    			</div>
