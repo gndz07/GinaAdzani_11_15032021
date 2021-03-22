@@ -18,12 +18,16 @@ export default class Accommodation extends React.Component{
 	render() {
 		const descriptions= [
    				{
-   					title: "Description",
-   					content: [this.state.item.description]
+   					id: 1,
+            title: "Description",
+   					content: [this.state.item.description],
+            expanded: false
    				},
    				{
+            id: 2,
    					title: "Équipements",
-   					content: this.state.item.equipments
+   					content: this.state.item.equipments,
+            expanded: false
    				}
    			]
 

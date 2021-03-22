@@ -1,10 +1,29 @@
 import React from 'react';
 
 export default class Collapse extends React.Component {
+	constructor(props) {
+        super(props);
+        this.state = {
+        	items: props.data,
+        };
+        this.handleClick = this.handleClick.bind(this);
+    }
 
 	handleClick = (id) => {
-		document.getElementById(id).classList.toggle("collapsed");
-		document.getElementById(id).parentElement.nextSibling.classList.toggle("show")
+		const updatedItems = this.state.items.map(item => {
+			if (item.id === id) {
+				return {
+					...item,
+					expanded: !item.expanded,
+				};
+			} else {
+				return item;
+			}
+		});
+
+		this.setState({
+			items: updatedItems,
+		});
 	}
 
 	render() {
@@ -12,17 +31,17 @@ export default class Collapse extends React.Component {
 			<div className="container">
 				<div id="accordion">
 
-					{this.props.data.map((collapse, index) => (
+					{this.state.items.map((collapse, index) => (
 						<div className="card" key={`collapse${index}`}>
 			    			<div className="card-header" id={`heading${index}`}>
 			        			
-			        				<button id={`button${index}`} className="btn btn-link collapsed accordion-btn" onClick={() => this.handleClick(`button${index}`)} aria-controls={`#collapse${index}`}>
+			        				<button className={ `btn btn-link accordion-btn ${collapse.expanded ? "collapsed" : ""}` } onClick={() => this.handleClick(collapse.id)} aria-controls={`#collapse${index}`}>
 			            				{collapse.title}
 			            				<i className="fa" />
 			        				</button>
 			        			
 			    			</div>
-			    			<div id={`collapse${index}`} className="collapse" aria-labelledby={`heading${index}`} data-parent="#accordion">
+			    			<div id={`collapse${index}`} className={ `collapse ${collapse.expanded ? "show" : ""}` } aria-labelledby={`heading${index}`} data-parent="#accordion">
 			        			<div className="card-body">
 			          				{collapse.content.map((item) => (
 			          					<li key={item}>{item}</li>
@@ -31,7 +50,6 @@ export default class Collapse extends React.Component {
 			      			</div>
 			    		</div>
 					))}
-
 
 				</div>
 			</div>
